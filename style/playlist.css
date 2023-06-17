@@ -1,0 +1,75 @@
+
+
+/* playlist taylor swift songs and nobita */
+
+
+.container {
+    padding: 20px;
+    width: 100%;
+}
+
+.main-container {
+
+    margin: auto;
+    width: 70%;
+
+}
+
+
+.content-details h1 {
+    color: #fff;
+}
+
+.playlist {
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .playlist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .playlist-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .playlist-count {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .playlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .playlist-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .playlist-item-details {
+    flex: 1;
+  }
+
+  .playlist-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .playlist-item-artist {
+    font-size: 14px;
+    color: #888;
+  }

@@ -19,7 +19,7 @@ body {
 }
 header {
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../asset/homePagedeylan.png);
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
 }
@@ -91,6 +91,19 @@ header {
 }
 
 
+.center-container {
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+  .download-button {
 
-
-
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+  }
