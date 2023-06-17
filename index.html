@@ -1,38 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	
-	<title>Welcome</title>
-
+<html>
+	<head>
+		
+		<link rel="stylesheet" type="text/css" href="style/login.css">
+		<Title>Sign-In</title>
 	<style>
-		header {
-			height: 100vh;
-		}
-	</style>
-</head>
-<body>
-	<header>
-		<div class="nav">
-			<a href="index.html"><img src="asset/logo.png" class="nav-img" alt="Logo" id="logo-img"></a>
-			
-			<ul>
-				<li><a href="AboutPage.html">About Page</a></li>
-				<li><a href="Profile.html">Profile</a></li>
-				<li><a href="Gallery.html">Gallery</a></li>
-				<li><a href="Playlist.html">Playlist</a></li>
-				<li><a href="Insights.html">Insights</a></li>
-				<li><a href="Page1.html">Log-out</a></li>
-			</ul>
-		</div>
-		<div class="title">
-			<h1>Welcome</h1>
-		</div>
-		<div class="button">
-	</header>
-</body>
-</html>
 
+	</style>
+		<body>		
+		<div id="logo">
+					<ul>
+					</ul>
+		</div>
+
+		<!-- mapapalitan ang username and password sa js script below
+		Default username: username
+		Default password: password -->
+			<div class="loginbox">
+			<img src="asset/BSPLogo.png" class="avatar">
+			<h1>Sign-In</h1>
+
+
+			<form id="loginForm">
+			  <p>Username</p>
+			  <input type="text" id="username" placeholder="Enter Username" required>
+			  <p>Password</p>
+			  <input type="password" id="password" placeholder="Enter Password" required>
+			  <button onclick="login()" class="login-button">Login</button>
+			</form>
+
+
+			</div>
+		
+		
+
+			<script>
+				document.getElementById("loginForm").addEventListener("submit", function(event) {
+				  event.preventDefault();
+			
+				  var username = document.getElementById("username").value;
+				  var password = document.getElementById("password").value;
+			
+				  if (username === "username" && password === "password") {
+					window.location.href = "welcome.html";
+				  } else {
+					alert('Invalid username or password. Please try again.');
+				  }
+				});
+			  </script>
+		
+		</body>
+</html>		
