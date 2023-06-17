@@ -1,0 +1,36 @@
+.container {
+    max-width: 80%; /* Adjust the maximum width as desired */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .gallery-title {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .gallery .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; 
+    overflow: hidden;
+  }
+
+  .gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery + .gallery {
+    margin-top: 10px; /* Add a top margin for the gap between galleries */
+  }
