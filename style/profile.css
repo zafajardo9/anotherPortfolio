@@ -1,0 +1,153 @@
+/*AYOOO*/
+
+.container {
+    background-color: #f7ffe8;
+    width: 100%;
+    padding: 20px;
+}
+
+.container-title {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.container-title .line {
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 100px; /* Adjust the width as desired */
+    height: 6px; /* Adjust the height as desired */
+    background-color: #a1a894; /* Adjust the background color */
+    bottom: -5px; /* Adjust the positioning as desired */
+    left: 0;
+  }
+
+
+  .main-container {
+    margin: auto;
+    width: 70%;
+  }
+
+
+  .content * {
+    margin: 30px;
+  }
+
+
+  .card {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .card ul li.highlight {
+    font-weight: bold;
+    color: #0066ff;
+  }
+
+  .card .container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .container-title h3 {
+    text-transform: capitalize;
+}
+
+
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    max-width: 80%; /* Adjust the maximum width as desired */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 3px;
+    height: 100%;
+    background-color: #999;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px; /* Adjust the spacing between timeline items */
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -30;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff2d2d;
+  }
+
+  .timeline-content {
+    padding-left: 30px; /* Adjust the indentation of the content */
+  }
+
+  .timeline-date {
+    font-weight: bold;
+    margin-bottom: 5px; /* Adjust the spacing between the date and content */
+  }
+
+  .timeline-description {
+    background-color: rgba(153, 153, 153, 0.8);
+    width: 70%;
+    padding: 40px;
+    padding-left: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px; /* Adjust the spacing between the content */
+    background: linear-gradient(to bottom, rgba(153, 153, 153, 0.8), rgba(153, 153, 153, 0.9)); 
+  }
+
+
+  .timeline-description p:last-child {
+    margin-bottom: 0; /* Remove the bottom margin of the last paragraph */
+  }
+
+
+.flex-container {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    background-color: #e3f0c952;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    margin-left: 2px;
+  }
